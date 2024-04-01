@@ -61,7 +61,7 @@ class Program
         AddEmployee(employees);
 
 
-        Console.WriteLine("\nList of all employees after adding a new employee:");
+        Console.WriteLine("\n New employeelist of all employees after adding :");
         PrintEmployeeList(employees);
     }
 
@@ -69,11 +69,11 @@ class Program
     {
         Console.WriteLine("Add Name:");
         string name = Console.ReadLine();
-        Console.WriteLine("Add Position:");
+        Console.WriteLine("Position:");
         string position = Console.ReadLine();
-        Console.WriteLine("Add Salary:");
+        Console.WriteLine("Salary:");
         double salary = double.Parse(Console.ReadLine());
-        Console.WriteLine("Add JoinDate (YYYY-MM-DD):");
+        Console.WriteLine("JoinDate (YYYY-MM-DD):");
         DateTime joinDate = DateTime.Parse(Console.ReadLine());
 
         int newEmployeeId = employees.Count + 1;
