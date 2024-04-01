@@ -85,7 +85,7 @@ class Program
     {
         if (employees.Count < 2)
         {
-            throw new InvalidOperationException("There are not enough employees to find the second-highest paid employee.");
+            Console.WriteLine("There are not enough employees to find the second-highest paid employee.");
         }
 
         Employee highestPaid = employees[0];
@@ -149,7 +149,7 @@ class Program
         }
 
         Employee lowestPaidEmployee = employees[0];
-       foreach (va r employee in employees)
+       foreach (var employee in employees)
         {
             if (employee.Salary < lowestPaidEmployee.Salary)
             {
